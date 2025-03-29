@@ -1,0 +1,10 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Node modules
+node_modules/
+
+# System files
+.DS_Store
