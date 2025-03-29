@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organ Donation Registry</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/colors.css">
+    <link rel="stylesheet" href="./styles/organ-donation.css">
+</head>
+<body>
+    <header class="organ-header">
+        <div class="container">
+            <h1>Organ Donation Registry</h1>
+            <p>Give the gift of life</p>
+        </div>
+    </header>
+
+    <nav class="organ-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#register">Register as Donor</a></li>
+                <li><a href="#information">Organ Donation Info</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="register" class="card organ-card">
+            <h2>Register as an Organ Donor</h2>
+            <form id="organDonorForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="donor-name">Full Name</label>
+                        <input type="text" id="donor-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donor-dob">Date of Birth</label>
+                        <input type="date" id="donor-dob" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="donor-phone">Phone Number</label>
+                        <input type="tel" id="donor-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donor-email">Email</label>
+                        <input type="email" id="donor-email">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="donor-address">Address</label>
+                    <input type="text" id="donor-address" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="donor-blood-type">Blood Type</label>
+                        <select id="donor-blood-type" required>
+                            <option value="">Select</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="donor-organ">Organs Willing to Donate</label>
+                        <select id="donor-organ" multiple required>
+                            <option value="heart">Heart</option>
+                            <option value="kidney">Kidneys</option>
+                            <option value="liver">Liver</option>
+                            <option value="lungs">Lungs</option>
+                            <option value="pancreas">Pancreas</option>
+                            <option value="intestines">Intestines</option>
+                            <option value="corneas">Corneas</option>
+                            <option value="tissue">Tissue</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="legal-consent" required>
+                        I consent to organ donation and confirm that I'm 18+ years old
+                    </label>
+                </div>
+                
+                <button type="submit" class="primary-btn">Register as Donor</button>
+            </form>
+            <div id="donor-confirmation" class="confirmation-message"></div>
+        </section>
+
+        <section id="information" class="card organ-card">
+            <h2>About Organ Donation</h2>
+            <div class="organ-info">
+                <div class="info-card">
+                    <h3>Why Register?</h3>
+                    <p>One organ donor can save up to 8 lives and enhance many more through tissue donation.</p>
+                </div>
+                <div class="info-card">
+                    <h3>The Process</h3>
+                    <p>Organ donation only occurs after all life-saving efforts have failed and death has been declared.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Medical Care</h3>
+                    <p>Your medical care is never compromised for organ donation.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="organ-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>National Organ Donation Helpline</p>
+                    <p>1-800-ORG-DONOR</p>
+                    <p>info@organdonation.org</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#register">Register</a></li>
+                        <li><a href="#information">Learn More</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Organ Donation Registry. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts/organ-donation.js"></script>
+</body>
+</html>

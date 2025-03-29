@@ -1,9 +1,23 @@
-/* Custom Styles */
+/* Custom Styles with Blue Color Scheme */
+
+:root {
+    --primary-blue: #3498db;
+    --dark-blue: #2980b9;
+    --light-blue: #e1f0fa;
+    --pale-blue: #f5f9fc;
+    --navy-blue: #2c3e50;
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
+    --medium-gray: #e9ecef;
+    --dark-gray: #495057;
+    --black: #212529;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    /* Removed overflow: hidden; */
+    background-color: var(--pale-blue);
 }
 
 /* Background Image */
@@ -13,14 +27,20 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire area */
+    object-fit: cover;
     z-index: -1;
+    opacity: 0.7; /* Added for better text readability */
 }
 
 /* Content Wrapper */
 .content-wrapper {
     position: relative;
-    z-index: 1; /* Ensures content is above the background */
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Card Styling */
@@ -28,42 +48,74 @@ body {
     border: none;
     border-radius: 15px;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card-title {
     font-size: 2rem;
     font-weight: bold;
-    color: #28a745;
+    color: var(--navy-blue);
 }
 
 .form-control {
     border-radius: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 12px;
+    border: 1px solid var(--medium-gray);
+    transition: all 0.3s ease;
 }
 
 .form-control:focus {
-    border-color: #28a745;
-    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
 }
 
-.btn-success {
-    background-color: #28a745;
+.btn-primary {
+    background-color: var(--primary-blue);
     border: none;
     border-radius: 10px;
-    padding: 10px;
+    padding: 12px 24px;
     font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
 }
 
-.btn-success:hover {
-    background-color: #218838;
+.btn-primary:hover {
+    background-color: var(--dark-blue);
+    transform: translateY(-2px);
 }
 
 a {
-    color: #28a745;
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #218838;
+    color: var(--navy-blue);
+    text-decoration: underline;
+}
+
+/* Additional Blue-themed elements */
+.alert-info {
+    background-color: var(--light-blue);
+    border-color: var(--primary-blue);
+    color: var(--navy-blue);
+}
+
+.text-primary {
+    color: var(--primary-blue) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content-wrapper {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .card-title {
+        font-size: 1.5rem;
+    }
 }

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthConnect - Your Healthcare Hub</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./styles/home.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <i class="fas fa-heartbeat logo-icon"></i>
+        <div>
+          <h1>HealthConnect</h1>
+          <p class="tagline">Connecting you to better health</p>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="home.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn btn-outline">Login</a>
+        <a href="register.html" class="btn btn-primary">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h2>Find the Best Healthcare Services Near You</h2>
+        <p class="hero-subtitle">Access top-rated doctors, hospitals, and emergency services with just a few clicks</p>
+        <form action="search.html" method="GET" class="search-bar">
+          <div class="search-input">
+            <i class="fas fa-search"></i>
+            <input type="text" name="query" placeholder="Search hospitals, doctors, or services...">
+          </div>
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+      </div>
+      <!-- <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Healthcare professionals">
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Quick Access Section -->
+  <section class="quick-access">
+    <div class="container">
+      <h2 class="section-title">Quick Access to Healthcare Services</h2>
+      <p class="section-subtitle">Get immediate access to essential medical services</p>
+      
+      <div class="services-grid">
+        <div class="service-card" onclick="location.href='doctors.html';">
+          <div class="card-icon">
+            <i class="fas fa-user-md"></i>
+          </div>
+          <h3>Find Doctors</h3>
+          <p>Book appointments with top specialists in your area</p>
+          <div class="card-arrow">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="location.href='blood-donation.html';">
+          <div class="card-icon">
+            <i class="fas fa-tint"></i>
+          </div>
+          <h3>Blood Donation</h3>
+          <p>Donate blood or find donors in emergencies</p>
+          <div class="card-arrow">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="location.href='organ-donation.html';">
+          <div class="card-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3>Organ Donation</h3>
+          <p>Register as a donor or find organ matches</p>
+          <div class="card-arrow">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="location.href='hospital.html';">
+          <div class="card-icon">
+            <i class="fas fa-hospital"></i>
+          </div>
+          <h3>Find Hospitals</h3>
+          <p>Locate the best hospitals near you</p>
+          <div class="card-arrow">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="location.href='emergency.html';">
+          <div class="card-icon">
+            <i class="fas fa-ambulance"></i>
+          </div>
+          <h3>Emergency</h3>
+          <p>Immediate help with ambulance services</p>
+          <div class="card-arrow">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="location.href='pharmacy.html';">
+          <div class="card-icon">
+            <i class="fas fa-pills"></i>
+          </div>
+          <h3>Pharmacy</h3>
+          <p>Find medicines and pharmacies nearby</p>
+          <div class="card-arrow">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-card">
+        <div class="stat-item">
+          <h3>10,000+</h3>
+          <p>Happy Patients</p>
+        </div>
+        <div class="stat-item">
+          <h3>5,000+</h3>
+          <p>Lives Saved</p>
+        </div>
+        <div class="stat-item">
+          <h3>2,000+</h3>
+          <p>Donations</p>
+        </div>
+        <div class="stat-item">
+          <h3>500+</h3>
+          <p>Partner Hospitals</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">What Our Users Say</h2>
+      <p class="section-subtitle">Trusted by thousands of patients nationwide</p>
+      
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="quote">"HealthConnect helped me find a specialist doctor within minutes when I needed it most. The booking process was seamless."</p>
+          <div class="user">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Doe">
+            <div>
+              <h4>John Doe</h4>
+              <p>Patient</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="quote">"The emergency services feature literally saved my life when I had a heart attack. The ambulance arrived in 8 minutes."</p>
+          <div class="user">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jane Smith">
+            <div>
+              <h4>Jane Smith</h4>
+              <p>Patient</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="quote">"As a blood donor, I love how easy it is to find donation centers and schedule appointments through HealthConnect."</p>
+          <div class="user">
+            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Robert Johnson">
+            <div>
+              <h4>Robert Johnson</h4>
+              <p>Regular Donor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to take control of your health?</h2>
+        <p>Join thousands of happy users who trust HealthConnect for their healthcare needs</p>
+        <div class="cta-buttons">
+          <a href="register.html" class="btn btn-primary">Sign Up Now</a>
+          <a href="about.html" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo">
+            <i class="fas fa-heartbeat logo-icon"></i>
+            <div>
+              <h3>HealthConnect</h3>
+              <p class="tagline">Your health, our priority</p>
+            </div>
+          </div>
+          <p class="footer-about">Connecting patients with healthcare providers since 2023</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="doctors.html">Find Doctors</a></li>
+            <li><a href="hospital.html">Find Hospitals</a></li>
+            <li><a href="blood-donation.html">Blood Donation</a></li>
+            <li><a href="organ-donation.html">Organ Donation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="careers.html">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect With Us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <div class="contact-info">
+            <p><i class="fas fa-phone"></i> +1 (800) HEALTH</p>
+            <p><i class="fas fa-envelope"></i> info@healthconnect.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2023 HealthConnect. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./scripts/home.js"></script>
+</body>
+</html>
