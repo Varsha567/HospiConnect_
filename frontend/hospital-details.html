@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Details | HospiConnect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="hospital-details.css">
+  <style>
+    .hospital-details-container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .detail-section {
+      margin-bottom: 25px;
+    }
+    .detail-section h3 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 8px;
+    }
+    .back-btn {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 10px 20px;
+      background: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>HospiConnect</h1>
+      <p>Your Trusted Healthcare Hub</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <a href="hospitals.html" class="back-btn">← Back to Hospitals</a>
+    
+    <div id="hospitalDetails" class="hospital-details-container">
+      <h2 id="hospitalName">Hospital Details</h2>
+      <div id="hospitalContent">
+        <p class="loading-message">Loading hospital information...</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 HospiConnect. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="hospital-details.js"></script>
+</body>
+</html>

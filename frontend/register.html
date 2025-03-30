@@ -3,45 +3,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospital System - Register</title>
-    <!-- Bootstrap CSS -->
+    <title>HealthConnect - Register</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./styles/colors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./styles/register.css">
 </head>
 <body>
-    <!-- Background Image -->
-    <img id="bg-img" src="assets/hospital.jpg" alt="Hospital background image">
-
-    <div class="container d-flex justify-content-center align-items-center vh-100">
-        <div class="card register-card">
-            <div class="card-body text-center">
-                <h2 class="card-title mb-4">Create Account</h2>
+    <div class="register-container">
+        <div class="register-card">
+            <div class="card-header">
+                <i class="fas fa-heartbeat logo-icon"></i>
+                <h3>Create Your Account</h3>
+            </div>
+            <div class="card-body">
                 <form id="registerForm">
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="username" placeholder="Username" required>
+                        <label for="username" class="form-label">Username</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            <input type="text" class="form-control" id="username" placeholder="Choose a username" required>
+                        </div>
+                        <div class="form-text text-danger" id="usernameError"></div>
                     </div>
+                    
                     <div class="mb-3">
-                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        <label for="email" class="form-label">Email Address</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-text text-danger" id="emailError"></div>
                     </div>
+                    
                     <div class="mb-3">
-                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                        </div>
                     </div>
+                    
                     <div class="mb-3">
-                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+                        <label for="password" class="form-label">Password</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                            <input type="password" class="form-control" id="password" placeholder="Create a password" required>
+                            <span class="input-group-text password-toggle" id="togglePassword">
+                                <i class="fas fa-eye"></i>
+                            </span>
+                        </div>
+                        <div class="password-strength mt-2">
+                            <div class="password-strength-bar" id="passwordStrengthBar"></div>
+                        </div>
+                        <div class="form-text">Password must contain:</div>
+                        <ul class="requirements-list">
+                            <li id="lengthReq">At least 8 characters</li>
+                            <li id="numberReq">At least 1 number</li>
+                            <li id="specialReq">At least 1 special character</li>
+                        </ul>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Register</button>
+                    
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+                            <span class="input-group-text password-toggle" id="toggleConfirmPassword">
+                                <i class="fas fa-eye"></i>
+                            </span>
+                        </div>
+                        <div class="form-text" id="passwordMatchText"></div>
+                    </div>
+                    
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                        <label class="form-check-label" for="termsCheck">I agree to the <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a></label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-register w-100 mb-3">
+                        <i class="fas fa-user-plus me-2"></i> Create Account
+                    </button>
+                    
+                    <div class="text-center">
+                        <p class="mb-0">Already have an account? <a href="login.html">Sign in</a></p>
+                    </div>
                 </form>
-                <p class="mt-3">Already have an account? <a href="login.html" class="login-link">Login</a></p>
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-    <!-- Custom JS -->
-    <script src="./scripts/auth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Toggle password visibility
+        function setupPasswordToggle(buttonId, inputId) {
+            document.getElementById(buttonId).addEventListener('click', function() {
+                const input = document.getElementById(inputId);
+                const icon = this.querySelector('i');
+                if (input.type === 'password') {
+                    input.type = 'text';
+                    icon.classList.replace('fa-eye', 'fa-eye-slash');
+                } else {
+                    input.type = 'password';
+                    icon.classList.replace('fa-eye-slash', 'fa-eye');
+                }
+            });
+        }
+
+        setupPasswordToggle('togglePassword', 'password');
+        setupPasswordToggle('toggleConfirmPassword', 'confirmPassword');
+
+        // Password strength checker
+        document.getElementById('password').addEventListener('input', function() {
+            const password = this.value;
+            const strengthBar = document.getElementById('passwordStrengthBar');
+            const lengthReq = document.getElementById('lengthReq');
+            const numberReq = document.getElementById('numberReq');
+            const specialReq = document.getElementById('specialReq');
+            
+            // Reset requirements
+            lengthReq.classList.remove('requirement-met');
+            numberReq.classList.remove('requirement-met');
+            specialReq.classList.remove('requirement-met');
+            
+            let strength = 0;
+            
+            // Length requirement
+            if (password.length >= 8) {
+                strength += 30;
+                lengthReq.classList.add('requirement-met');
+            }
+            
+            // Number requirement
+            if (/\d/.test(password)) {
+                strength += 30;
+                numberReq.classList.add('requirement-met');
+            }
+            
+            // Special character requirement
+            if (/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+                strength += 30;
+                specialReq.classList.add('requirement-met');
+            }
+            
+            // Uppercase letter (bonus)
+            if (/[A-Z]/.test(password)) {
+                strength += 10;
+            }
+            
+            // Update strength bar
+            strengthBar.style.width = strength + '%';
+            
+            // Update color based on strength
+            if (strength < 50) {
+                strengthBar.style.backgroundColor = '#dc3545'; // Red
+            } else if (strength < 80) {
+                strengthBar.style.backgroundColor = '#ffc107'; // Yellow
+            } else {
+                strengthBar.style.backgroundColor = '#28a745'; // Green
+            }
+        });
+
+        // Password match checker
+        document.getElementById('confirmPassword').addEventListener('input', function() {
+            const password = document.getElementById('password').value;
+            const confirmPassword = this.value;
+            const matchText = document.getElementById('passwordMatchText');
+            
+            if (confirmPassword.length === 0) {
+                matchText.textContent = '';
+                matchText.style.color = '';
+            } else if (password === confirmPassword) {
+                matchText.textContent = 'Passwords match!';
+                matchText.style.color = 'var(--success-green)';
+            } else {
+                matchText.textContent = 'Passwords do not match';
+                matchText.style.color = '#dc3545';
+            }
+        });
+
+        // Real-time username availability check
+        document.getElementById('username').addEventListener('blur', async function() {
+            const username = this.value;
+            const errorElement = document.getElementById('usernameError');
+            
+            if (username.length < 3) {
+                errorElement.textContent = 'Username must be at least 3 characters';
+                return;
+            }
+            
+            try {
+                const response = await fetch('/api/check-username', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ username })
+                });
+                
+                const data = await response.json();
+                
+                if (data.exists) {
+                    errorElement.textContent = 'Username already taken';
+                } else {
+                    errorElement.textContent = '';
+                }
+            } catch (error) {
+                console.error('Error checking username:', error);
+            }
+        });
+
+        // Real-time email availability check
+        document.getElementById('email').addEventListener('blur', async function() {
+            const email = this.value;
+            const errorElement = document.getElementById('emailError');
+            
+            if (!email.includes('@') || !email.includes('.')) {
+                errorElement.textContent = 'Please enter a valid email';
+                return;
+            }
+            
+            try {
+                const response = await fetch('/api/check-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ email })
+                });
+                
+                const data = await response.json();
+                
+                if (data.exists) {
+                    errorElement.textContent = 'Email already registered';
+                } else {
+                    errorElement.textContent = '';
+                }
+            } catch (error) {
+                console.error('Error checking email:', error);
+            }
+        });
+
+        // Form submission with API call
+       // Updated form submission handler
+       document.getElementById('registerForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const originalBtnText = submitBtn.innerHTML;
+    
+    // Set loading state
+    submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Processing...';
+    submitBtn.disabled = true;
+
+    try {
+        const formData = {
+            username: document.getElementById('username').value,
+            email: document.getElementById('email').value,
+            password: document.getElementById('password').value,
+            phone: document.getElementById('phone').value || null
+        };
+
+        // Basic validation
+        if (!formData.username || !formData.email || !formData.password) {
+            throw new Error('Please fill all required fields');
+        }
+
+        const response = await fetch('http://localhost:3000/api/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+        });
+
+        // Handle non-JSON responses
+        if (!response.ok) {
+            const errorData = await response.text();
+            throw new Error(errorData || 'Registration failed');
+        }
+
+        const data = await response.json();
+        
+        if (data.status === 'success') {
+            alert('Registration successful! Redirecting to login...');
+            window.location.href = 'login.html';
+        } else {
+            throw new Error(data.message || 'Registration failed');
+        }
+
+    } catch (error) {
+        console.error('Error:', error);
+        alert(error.message || 'An error occurred during registration');
+    } finally {
+        // Reset button state
+        submitBtn.innerHTML = originalBtnText;
+        submitBtn.disabled = false;
+    }
+});
+    </script>
 </body>
 </html>
