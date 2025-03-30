@@ -1,548 +1,547 @@
 
 [
-    {
-      "id": "apollo-jubilee",
-      "name": "Apollo Hospitals, Jubilee Hills",
-      "location": "Banjara Hills",
-      "specialties": ["Cardiology", "Neurology", "Orthopedics", "Oncology"],
-      "contact": "040 2360 7777",
-      "icuAvailable": true,
-      "doctors": [
-        {
-          "name": "Dr. Rajesh Sharma",
-          "specialty": "Cardiology",
-          "experience": "15 years",
-          "qualification": "MD, DM Cardiology",
-          "availability": "Mon-Fri: 9AM-5PM",
-          "languages": ["English", "Hindi", "Telugu"]
-        },
-        {
-          "name": "Dr. Priya Patel",
-          "specialty": "Neurology",
-          "experience": "12 years",
-          "qualification": "DM Neurology",
-          "availability": "Mon-Wed, Fri: 10AM-4PM",
-          "languages": ["English", "Hindi"]
-        },
-        {
-          "name": "Dr. Arjun Reddy",
-          "specialty": "Orthopedics",
-          "experience": "18 years",
-          "qualification": "MS Orthopedics",
-          "availability": "Tue-Thu: 8AM-2PM",
-          "languages": ["English", "Telugu"]
-        }
-      ]
-    },
-    {
-      "id": "yashoda-somajiguda",
-      "name": "Yashoda Hospitals, Somajiguda",
-      "location": "Banjara Hills",
-      "specialties": ["Cardiology", "Pediatrics", "Nephrology", "Gastroenterology"],
-      "contact": "040 4567 4567",
-      "icuAvailable": true,
-      "doctors": [
-        {
-          "name": "Dr. Anjali Mehta",
-          "specialty": "Pediatrics",
-          "experience": "10 years",
-          "qualification": "MD Pediatrics",
-          "availability": "Mon-Sat: 9AM-3PM",
-          "languages": ["English", "Hindi", "Telugu"]
-        },
-        {
-          "name": "Dr. Vikram Singh",
-          "specialty": "Cardiology",
-          "experience": "14 years",
-          "qualification": "DM Cardiology",
-          "availability": "Mon-Fri: 11AM-6PM",
-          "languages": ["English", "Hindi"]
-        },
-        {
-          "name": "Dr. Sanjay Gupta",
-          "specialty": "Nephrology",
-          "experience": "13 years",
-          "qualification": "DM Nephrology",
-          "availability": "Wed-Sat: 10AM-5PM",
-          "languages": ["English", "Hindi"]
-        }
-      ]
-    },
-    {
-      "id": "continental",
-      "name": "Continental Hospitals",
-      "location": "Gachibowli",
-      "specialties": ["Neurology", "Orthopedics", "Urology", "General Surgery"],
-      "contact": "040 6713 1313",
-      "icuAvailable": true,
-      "doctors": [
-        {
-          "name": "Dr. Neha Gupta",
-          "specialty": "Neurology",
-          "experience": "9 years",
-          "qualification": "DM Neurology",
-          "availability": "Mon, Wed, Fri: 10AM-5PM",
-          "languages": ["English", "Hindi"]
-        },
-        {
-          "name": "Dr. Sanjay Kumar",
-          "specialty": "Urology",
-          "experience": "16 years",
-          "qualification": "MS, MCh Urology",
-          "availability": "Tue, Thu, Sat: 9AM-4PM",
-          "languages": ["English", "Hindi", "Telugu"]
-        },
-        {
-          "name": "Dr. Ramesh Patel",
-          "specialty": "Orthopedics",
-          "experience": "20 years",
-          "qualification": "MS Orthopedics",
-          "availability": "Mon-Fri: 8AM-1PM",
-          "languages": ["English", "Telugu"]
-        }
-      ]
-    },
-    {
-      "id": "kims-secunderabad",
-      "name": "KIMS Hospitals, Secunderabad",
-      "location": "Secunderabad",
-      "specialties": ["Cardiology", "Neurology", "Pediatrics", "Dermatology"],
-      "contact": "040 4488 5000",
-      "icuAvailable": true,
-      "doctors": [
-        {
-          "name": "Dr. Anil Kapoor",
-          "specialty": "Cardiology",
-          "experience": "17 years",
-          "qualification": "DM Cardiology",
-          "availability": "Mon-Sat: 9AM-2PM",
-          "languages": ["English", "Hindi"]
-        },
-        {
-          "name": "Dr. Sunita Reddy",
-          "specialty": "Dermatology",
-          "experience": "11 years",
-          "qualification": "MD Dermatology",
-          "availability": "Tue, Thu, Sat: 10AM-4PM",
-          "languages": ["English", "Hindi", "Telugu"]
-        }
-      ]
-    },
-    {
-      "id": "rainbow-children",
-      "name": "Rainbow Children's Hospital",
-      "location": "Banjara Hills",
-      "specialties": ["Pediatrics", "Neonatology", "Pediatric Surgery"],
-      "contact": "040 4848 6666",
-      "icuAvailable": true,
-      "doctors": [
-        {
-          "name": "Dr. Preeti Sharma",
-          "specialty": "Pediatrics",
-          "experience": "14 years",
-          "qualification": "MD Pediatrics",
-          "availability": "Mon-Sat: 8AM-4PM",
-          "languages": ["English", "Hindi"]
-        },
-        {
-          "name": "Dr. Arun Kumar",
-          "specialty": "Neonatology",
-          "experience": "12 years",
-          "qualification": "DM Neonatology",
-          "availability": "Mon-Fri: 9AM-3PM",
-          "languages": ["English", "Telugu"]
-        }
-      ]
-    },
-    {
-      "id": "care-banjara",
-      "name": "Care Hospitals, Banjara Hills",
-      "location": "Banjara Hills",
-      "specialties": ["Cardiology", "Neurology", "Pulmonology"],
-      "contact": "040 3041 8888",
-      "icuAvailable": false,
-      "doctors": [
-        {
-          "name": "Dr. Rohit Malhotra",
-          "specialty": "Cardiology",
-          "experience": "16 years",
-          "qualification": "DM Cardiology",
-          "availability": "Mon-Fri: 10AM-5PM",
-          "languages": ["English", "Hindi"]
-        },
-        {
-          "name": "Dr. Nisha Rao",
-          "specialty": "Pulmonology",
-          "experience": "10 years",
-          "qualification": "DM Pulmonology",
-          "availability": "Tue, Thu, Sat: 11AM-4PM",
-          "languages": ["English", "Hindi", "Telugu"]
-        }
-      ]
-    },
-    {
-      "id": "global-lakdikapul",
-      "name": "Global Hospitals, Lakdi-ka-pul",
-      "location": "Lakdi-ka-pul",
-      "specialties": ["Hepatology", "Transplant Surgery", "Gastroenterology"],
-      "contact": "040 3021 2345",
-      "icuAvailable": true,
-      "doctors": [
-        {
-          "name": "Dr. Sameer Khan",
-          "specialty": "Hepatology",
-          "experience": "15 years",
-          "qualification": "DM Hepatology",
-          "availability": "Mon, Wed, Fri: 9AM-3PM",
-          "languages": ["English", "Hindi"]
-        },
-        {
-          "name": "Dr. Ananya Joshi",
-          "specialty": "Transplant Surgery",
-          "experience": "13 years",
-          "qualification": "MCh Transplant Surgery",
-          "availability": "Tue, Thu: 10AM-5PM",
-          "languages": ["English", "Hindi", "Marathi"]
-        }
-      ]
-    },
-    {
-      "id": "omega-hitec",
-      "name": "Omega Hospitals",
-      "location": "HITEC City",
-      "specialties": ["Oncology", "Radiation Therapy", "Surgical Oncology"],
-      "contact": "040 2355 1234",
-      "icuAvailable": true,
-      "doctors": [
-        {
-          "name": "Dr. Vishal Rao",
-          "specialty": "Oncology",
-          "experience": "14 years",
-          "qualification": "DM Oncology",
-          "availability": "Mon-Fri: 9AM-4PM",
-          "languages": ["English", "Hindi", "Kannada"]
-        },
-        {
-          "name": "Dr. Swati Mehra",
-          "specialty": "Radiation Therapy",
-          "experience": "11 years",
-          "qualification": "MD Radiation Therapy",
-          "availability": "Mon, Wed, Fri: 10AM-3PM",
-          "languages": ["English", "Hindi"]
-        }
-      ]
-    },
-    {
-      "id": "star-hospitals",
-      "name": "Star Hospitals",
-      "location": "Banjara Hills",
-      "specialties": ["Cardiology", "Neurology", "Orthopedics"],
-      "contact": "040 4477 7777",
-      "icuAvailable": true,
-      "doctors": [
-        {
-          "name": "Dr. Karthik Reddy",
-          "specialty": "Cardiology",
-          "experience": "18 years",
-          "qualification": "DM Cardiology",
-          "availability": "Mon-Sat: 9AM-2PM",
-          "languages": ["English", "Telugu"]
-        },
-        {
-          "name": "Dr. Meena Kapoor",
-          "specialty": "Neurology",
-          "experience": "12 years",
-          "qualification": "DM Neurology",
-          "availability": "Tue, Thu, Sat: 10AM-4PM",
-          "languages": ["English", "Hindi"]
-        }
-      ]
-    },
-    {
-      "id": "medicover-hitec",
-      "name": "Medicover Hospitals",
-      "location": "HITEC City",
-      "specialties": ["General Medicine", "Pediatrics", "Gynecology"],
-      "contact": "040 6833 4455",
-      "icuAvailable": false,
-      "doctors": [
-        {
-          "name": "Dr. Anjali Desai",
-          "specialty": "Gynecology",
-          "experience": "13 years",
-          "qualification": "MD Gynecology",
-          "availability": "Mon-Sat: 10AM-3PM",
-          "languages": ["English", "Hindi", "Marathi"]
-        },
-        {
-          "name": "Dr. Rahul Verma",
-          "specialty": "General Medicine",
-          "experience": "10 years",
-          "qualification": "MD General Medicine",
-          "availability": "Mon-Fri: 9AM-4PM",
-          "languages": ["English", "Hindi"]
-        }
-      ]
-    },
-    {
-      "id": "sunshine-secunderabad",
-      "name": "Sunshine Hospitals",
-      "location": "Secunderabad",
-      "specialties": ["Orthopedics", "Neurology", "General Surgery"],
-      "contact": "040 4455 6677",
-      "icuAvailable": true,
-      "doctors": [
-        {
-          "name": "Dr. Harish Kumar",
-          "specialty": "Orthopedics",
-          "experience": "20 years",
-          "qualification": "MS Orthopedics",
-          "availability": "Mon-Fri: 8AM-1PM",
-          "languages": ["English", "Hindi", "Telugu"]
-        },
-        {
-          "name": "Dr. Nandini Rao",
-          "specialty": "Neurology",
-          "experience": "15 years",
-          "qualification": "DM Neurology",
-          "availability": "Tue, Thu, Sat: 10AM-4PM",
-          "languages": ["English", "Telugu"]
-        }
-      ]
-    },
-    {
-      "id": "aig-gachibowli",
-      "name": "AIG Hospitals",
-      "location": "Gachibowli",
-      "specialties": ["Gastroenterology", "Hepatology", "Bariatric Surgery"],
-      "contact": "040 2424 2424",
-      "icuAvailable": true,
-      "doctors": [
-        {
-          "name": "Dr. Ajit Kumar",
-          "specialty": "Gastroenterology",
-          "experience": "17 years",
-          "qualification": "DM Gastroenterology",
-          "availability": "Mon-Sat: 9AM-2PM",
-          "languages": ["English", "Hindi", "Telugu"]
-        },
-        {
-          "name": "Dr. Priyanka Sharma",
-          "specialty": "Bariatric Surgery",
-          "experience": "12 years",
-          "qualification": "MCh Bariatric Surgery",
-          "availability": "Mon, Wed, Fri: 10AM-4PM",
-          "languages": ["English", "Hindi"]
-        }
-      ]
-    },
-    {
-      "id": "slg-lakdikapul",
-      "name": "SLG Hospitals",
-      "location": "Lakdi-ka-pul",
-      "specialties": ["General Medicine", "Pediatrics", "Dermatology"],
-      "contact": "040 2323 2323",
-      "icuAvailable": false,
-      "doctors": [
-        {
-          "name": "Dr. Sanjay Verma",
-          "specialty": "General Medicine",
-          "experience": "15 years",
-          "qualification": "MD General Medicine",
-          "availability": "Mon-Fri: 9AM-4PM",
-          "languages": ["English", "Hindi"]
-        },
-        {
-          "name": "Dr. Ananya Reddy",
-          "specialty": "Dermatology",
-          "experience": "10 years",
-          "qualification": "MD Dermatology",
-          "availability": "Tue, Thu, Sat: 10AM-3PM",
-          "languages": ["English", "Telugu"]
-        }
-      ]
-    },
-    {
-      "id": "maxcure-madhapur",
-      "name": "MaxCure Hospitals",
-      "location": "Madhapur",
-      "specialties": ["Cardiology", "Neurology", "Orthopedics"],
-      "contact": "040 4949 4949",
-      "icuAvailable": true,
-      "doctors": [
-        {
-          "name": "Dr. Vikram Aditya",
-          "specialty": "Cardiology",
-          "experience": "16 years",
-          "qualification": "DM Cardiology",
-          "availability": "Mon-Sat: 9AM-2PM",
-          "languages": ["English", "Hindi", "Telugu"]
-        },
-        {
-          "name": "Dr. Sneha Kapoor",
-          "specialty": "Neurology",
-          "experience": "11 years",
-          "qualification": "DM Neurology",
-          "availability": "Mon, Wed, Fri: 10AM-4PM",
-          "languages": ["English", "Hindi"]
-        }
-      ]
-    },
-    {
-      "id": "prakriya-gachibowli",
-      "name": "Prakriya Hospitals",
-      "location": "Gachibowli",
-      "specialties": ["General Medicine", "Pediatrics", "Gynecology"],
-      "contact": "040 7123 4567",
-      "icuAvailable": false,
-      "doctors": [
-        {
-          "name": "Dr. Ritu Sharma",
-          "specialty": "Gynecology",
-          "experience": "14 years",
-          "qualification": "MD Gynecology",
-          "availability": "Mon-Sat: 10AM-3PM",
-          "languages": ["English", "Hindi"]
-        },
-        {
-          "name": "Dr. Arun Malhotra",
-          "specialty": "Pediatrics",
-          "experience": "12 years",
-          "qualification": "MD Pediatrics",
-          "availability": "Mon-Fri: 9AM-4PM",
-          "languages": ["English", "Hindi", "Telugu"]
-        }
-      ]
-    },
-    {
-      "id": "metro-heart",
-      "name": "Metro Heart Institute",
-      "location": "Banjara Hills",
-      "specialties": ["Cardiology", "Cardiac Surgery", "Vascular Surgery"],
-      "contact": "040 2345 6789",
-      "icuAvailable": true,
-      "doctors": [
-        {
-          "name": "Dr. Nikhil Verma",
-          "specialty": "Cardiac Surgery",
-          "experience": "18 years",
-          "qualification": "MCh Cardiac Surgery",
-          "availability": "Mon-Fri: 8AM-3PM",
-          "languages": ["English", "Hindi"]
-        },
-        {
-          "name": "Dr. Shalini Kapoor",
-          "specialty": "Vascular Surgery",
-          "experience": "13 years",
-          "qualification": "MCh Vascular Surgery",
-          "availability": "Tue, Thu, Sat: 9AM-4PM",
-          "languages": ["English", "Hindi", "Punjabi"]
-        }
-      ]
-    },
-    {
-      "id": "aditya-birla",
-      "name": "Aditya Birla Memorial Hospital",
-      "location": "Gachibowli",
-      "specialties": ["Oncology", "Radiotherapy", "Palliative Care"],
-      "contact": "040 9876 5432",
-      "icuAvailable": true,
-      "doctors": [
-        {
-          "name": "Dr. Sameer Joshi",
-          "specialty": "Oncology",
-          "experience": "16 years",
-          "qualification": "DM Oncology",
-          "availability": "Mon-Sat: 9AM-2PM",
-          "languages": ["English", "Hindi", "Marathi"]
-        },
-        {
-          "name": "Dr. Anjali Reddy",
-          "specialty": "Radiotherapy",
-          "experience": "12 years",
-          "qualification": "MD Radiotherapy",
-          "availability": "Mon, Wed, Fri: 10AM-4PM",
-          "languages": ["English", "Telugu"]
-        }
-      ]
-    },
-    {
-      "id": "sri-sai",
-      "name": "Sri Sai MultiSpecialty Hospital",
-      "location": "HITEC City",
-      "specialties": ["General Surgery", "Internal Medicine", "ENT"],
-      "contact": "040 8765 4321",
-      "icuAvailable": false,
-      "doctors": [
-        {
-          "name": "Dr. Rajiv Malhotra",
-          "specialty": "General Surgery",
-          "experience": "15 years",
-          "qualification": "MS General Surgery",
-          "availability": "Mon-Fri: 9AM-4PM",
-          "languages": ["English", "Hindi"]
-        },
-        {
-          "name": "Dr. Priya Nair",
-          "specialty": "ENT",
-          "experience": "11 years",
-          "qualification": "MS ENT",
-          "availability": "Tue, Thu, Sat: 10AM-3PM",
-          "languages": ["English", "Hindi", "Malayalam"]
-        }
-      ]
-    },
-    {
-      "id": "life-line",
-      "name": "Life Line SuperSpecialty Hospital",
-      "location": "Madhapur",
-      "specialties": ["Emergency Medicine", "Trauma Care", "Critical Care"],
-      "contact": "040 7654 3210",
-      "icuAvailable": true,
-      "doctors": [
-        {
-          "name": "Dr. Arjun Kapoor",
-          "specialty": "Emergency Medicine",
-          "experience": "14 years",
-          "qualification": "MD Emergency Medicine",
-          "availability": "24/7 On Call",
-          "languages": ["English", "Hindi"]
-        },
-        {
-          "name": "Dr. Neeta Singh",
-          "specialty": "Critical Care",
-          "experience": "12 years",
-          "qualification": "DM Critical Care",
-          "availability": "24/7 On Call",
-          "languages": ["English", "Hindi", "Telugu"]
-        }
-      ]
-    },
-    {
-      "id": "city-center",
-      "name": "City Center Hospital",
-      "location": "Secunderabad",
-      "specialties": ["Family Medicine", "Pediatrics", "Geriatrics"],
-      "contact": "040 6543 2109",
-      "icuAvailable": false,
-      "doctors": [
-        {
-          "name": "Dr. Amit Sharma",
-          "specialty": "Family Medicine",
-          "experience": "15 years",
-          "qualification": "MD Family Medicine",
-          "availability": "Mon-Sat: 9AM-4PM",
-          "languages": ["English", "Hindi"]
-        },
-        {
-          "name": "Dr. Sunita Reddy",
-          "specialty": "Geriatrics",
-          "experience": "13 years",
-          "qualification": "MD Geriatrics",
-          "availability": "Mon, Wed, Fri: 10AM-3PM",
-          "languages": ["English", "Telugu"]
-        }
-      ]
-    }
-  ]
-  
+  {
+    "id": "apollo-jubilee",
+    "name": "Apollo Hospitals, Jubilee Hills",
+    "location": "Banjara Hills",
+    "specialties": ["Cardiology", "Neurology", "Orthopedics", "Oncology"],
+    "contact": "040 2360 7777",
+    "icuAvailable": true,
+    "doctors": [
+      {
+        "name": "Dr. Rajesh Sharma",
+        "specialty": "Cardiology",
+        "experience": "15 years",
+        "qualification": "MD, DM Cardiology",
+        "availability": "Mon-Fri: 9AM-5PM",
+        "languages": ["English", "Hindi", "Telugu"]
+      },
+      {
+        "name": "Dr. Priya Patel",
+        "specialty": "Neurology",
+        "experience": "12 years",
+        "qualification": "DM Neurology",
+        "availability": "Mon-Wed, Fri: 10AM-4PM",
+        "languages": ["English", "Hindi"]
+      },
+      {
+        "name": "Dr. Arjun Reddy",
+        "specialty": "Orthopedics",
+        "experience": "18 years",
+        "qualification": "MS Orthopedics",
+        "availability": "Tue-Thu: 8AM-2PM",
+        "languages": ["English", "Telugu"]
+      }
+    ]
+  },
+  {
+    "id": "yashoda-somajiguda",
+    "name": "Yashoda Hospitals, Somajiguda",
+    "location": "Banjara Hills",
+    "specialties": ["Cardiology", "Pediatrics", "Nephrology", "Gastroenterology"],
+    "contact": "040 4567 4567",
+    "icuAvailable": true,
+    "doctors": [
+      {
+        "name": "Dr. Anjali Mehta",
+        "specialty": "Pediatrics",
+        "experience": "10 years",
+        "qualification": "MD Pediatrics",
+        "availability": "Mon-Sat: 9AM-3PM",
+        "languages": ["English", "Hindi", "Telugu"]
+      },
+      {
+        "name": "Dr. Vikram Singh",
+        "specialty": "Cardiology",
+        "experience": "14 years",
+        "qualification": "DM Cardiology",
+        "availability": "Mon-Fri: 11AM-6PM",
+        "languages": ["English", "Hindi"]
+      },
+      {
+        "name": "Dr. Sanjay Gupta",
+        "specialty": "Nephrology",
+        "experience": "13 years",
+        "qualification": "DM Nephrology",
+        "availability": "Wed-Sat: 10AM-5PM",
+        "languages": ["English", "Hindi"]
+      }
+    ]
+  },
+  {
+    "id": "continental",
+    "name": "Continental Hospitals",
+    "location": "Gachibowli",
+    "specialties": ["Neurology", "Orthopedics", "Urology", "General Surgery"],
+    "contact": "040 6713 1313",
+    "icuAvailable": true,
+    "doctors": [
+      {
+        "name": "Dr. Neha Gupta",
+        "specialty": "Neurology",
+        "experience": "9 years",
+        "qualification": "DM Neurology",
+        "availability": "Mon, Wed, Fri: 10AM-5PM",
+        "languages": ["English", "Hindi"]
+      },
+      {
+        "name": "Dr. Sanjay Kumar",
+        "specialty": "Urology",
+        "experience": "16 years",
+        "qualification": "MS, MCh Urology",
+        "availability": "Tue, Thu, Sat: 9AM-4PM",
+        "languages": ["English", "Hindi", "Telugu"]
+      },
+      {
+        "name": "Dr. Ramesh Patel",
+        "specialty": "Orthopedics",
+        "experience": "20 years",
+        "qualification": "MS Orthopedics",
+        "availability": "Mon-Fri: 8AM-1PM",
+        "languages": ["English", "Telugu"]
+      }
+    ]
+  },
+  {
+    "id": "kims-secunderabad",
+    "name": "KIMS Hospitals, Secunderabad",
+    "location": "Secunderabad",
+    "specialties": ["Cardiology", "Neurology", "Pediatrics", "Dermatology"],
+    "contact": "040 4488 5000",
+    "icuAvailable": true,
+    "doctors": [
+      {
+        "name": "Dr. Anil Kapoor",
+        "specialty": "Cardiology",
+        "experience": "17 years",
+        "qualification": "DM Cardiology",
+        "availability": "Mon-Sat: 9AM-2PM",
+        "languages": ["English", "Hindi"]
+      },
+      {
+        "name": "Dr. Sunita Reddy",
+        "specialty": "Dermatology",
+        "experience": "11 years",
+        "qualification": "MD Dermatology",
+        "availability": "Tue, Thu, Sat: 10AM-4PM",
+        "languages": ["English", "Hindi", "Telugu"]
+      }
+    ]
+  },
+  {
+    "id": "rainbow-children",
+    "name": "Rainbow Children's Hospital",
+    "location": "Banjara Hills",
+    "specialties": ["Pediatrics", "Neonatology", "Pediatric Surgery"],
+    "contact": "040 4848 6666",
+    "icuAvailable": true,
+    "doctors": [
+      {
+        "name": "Dr. Preeti Sharma",
+        "specialty": "Pediatrics",
+        "experience": "14 years",
+        "qualification": "MD Pediatrics",
+        "availability": "Mon-Sat: 8AM-4PM",
+        "languages": ["English", "Hindi"]
+      },
+      {
+        "name": "Dr. Arun Kumar",
+        "specialty": "Neonatology",
+        "experience": "12 years",
+        "qualification": "DM Neonatology",
+        "availability": "Mon-Fri: 9AM-3PM",
+        "languages": ["English", "Telugu"]
+      }
+    ]
+  },
+  {
+    "id": "care-banjara",
+    "name": "Care Hospitals, Banjara Hills",
+    "location": "Banjara Hills",
+    "specialties": ["Cardiology", "Neurology", "Pulmonology"],
+    "contact": "040 3041 8888",
+    "icuAvailable": false,
+    "doctors": [
+      {
+        "name": "Dr. Rohit Malhotra",
+        "specialty": "Cardiology",
+        "experience": "16 years",
+        "qualification": "DM Cardiology",
+        "availability": "Mon-Fri: 10AM-5PM",
+        "languages": ["English", "Hindi"]
+      },
+      {
+        "name": "Dr. Nisha Rao",
+        "specialty": "Pulmonology",
+        "experience": "10 years",
+        "qualification": "DM Pulmonology",
+        "availability": "Tue, Thu, Sat: 11AM-4PM",
+        "languages": ["English", "Hindi", "Telugu"]
+      }
+    ]
+  },
+  {
+    "id": "global-lakdikapul",
+    "name": "Global Hospitals, Lakdi-ka-pul",
+    "location": "Lakdi-ka-pul",
+    "specialties": ["Hepatology", "Transplant Surgery", "Gastroenterology"],
+    "contact": "040 3021 2345",
+    "icuAvailable": true,
+    "doctors": [
+      {
+        "name": "Dr. Sameer Khan",
+        "specialty": "Hepatology",
+        "experience": "15 years",
+        "qualification": "DM Hepatology",
+        "availability": "Mon, Wed, Fri: 9AM-3PM",
+        "languages": ["English", "Hindi"]
+      },
+      {
+        "name": "Dr. Ananya Joshi",
+        "specialty": "Transplant Surgery",
+        "experience": "13 years",
+        "qualification": "MCh Transplant Surgery",
+        "availability": "Tue, Thu: 10AM-5PM",
+        "languages": ["English", "Hindi", "Marathi"]
+      }
+    ]
+  },
+  {
+    "id": "omega-hitec",
+    "name": "Omega Hospitals",
+    "location": "HITEC City",
+    "specialties": ["Oncology", "Radiation Therapy", "Surgical Oncology"],
+    "contact": "040 2355 1234",
+    "icuAvailable": true,
+    "doctors": [
+      {
+        "name": "Dr. Vishal Rao",
+        "specialty": "Oncology",
+        "experience": "14 years",
+        "qualification": "DM Oncology",
+        "availability": "Mon-Fri: 9AM-4PM",
+        "languages": ["English", "Hindi", "Kannada"]
+      },
+      {
+        "name": "Dr. Swati Mehra",
+        "specialty": "Radiation Therapy",
+        "experience": "11 years",
+        "qualification": "MD Radiation Therapy",
+        "availability": "Mon, Wed, Fri: 10AM-3PM",
+        "languages": ["English", "Hindi"]
+      }
+    ]
+  },
+  {
+    "id": "star-hospitals",
+    "name": "Star Hospitals",
+    "location": "Banjara Hills",
+    "specialties": ["Cardiology", "Neurology", "Orthopedics"],
+    "contact": "040 4477 7777",
+    "icuAvailable": true,
+    "doctors": [
+      {
+        "name": "Dr. Karthik Reddy",
+        "specialty": "Cardiology",
+        "experience": "18 years",
+        "qualification": "DM Cardiology",
+        "availability": "Mon-Sat: 9AM-2PM",
+        "languages": ["English", "Telugu"]
+      },
+      {
+        "name": "Dr. Meena Kapoor",
+        "specialty": "Neurology",
+        "experience": "12 years",
+        "qualification": "DM Neurology",
+        "availability": "Tue, Thu, Sat: 10AM-4PM",
+        "languages": ["English", "Hindi"]
+      }
+    ]
+  },
+  {
+    "id": "medicover-hitec",
+    "name": "Medicover Hospitals",
+    "location": "HITEC City",
+    "specialties": ["General Medicine", "Pediatrics", "Gynecology"],
+    "contact": "040 6833 4455",
+    "icuAvailable": false,
+    "doctors": [
+      {
+        "name": "Dr. Anjali Desai",
+        "specialty": "Gynecology",
+        "experience": "13 years",
+        "qualification": "MD Gynecology",
+        "availability": "Mon-Sat: 10AM-3PM",
+        "languages": ["English", "Hindi", "Marathi"]
+      },
+      {
+        "name": "Dr. Rahul Verma",
+        "specialty": "General Medicine",
+        "experience": "10 years",
+        "qualification": "MD General Medicine",
+        "availability": "Mon-Fri: 9AM-4PM",
+        "languages": ["English", "Hindi"]
+      }
+    ]
+  },
+  {
+    "id": "sunshine-secunderabad",
+    "name": "Sunshine Hospitals",
+    "location": "Secunderabad",
+    "specialties": ["Orthopedics", "Neurology", "General Surgery"],
+    "contact": "040 4455 6677",
+    "icuAvailable": true,
+    "doctors": [
+      {
+        "name": "Dr. Harish Kumar",
+        "specialty": "Orthopedics",
+        "experience": "20 years",
+        "qualification": "MS Orthopedics",
+        "availability": "Mon-Fri: 8AM-1PM",
+        "languages": ["English", "Hindi", "Telugu"]
+      },
+      {
+        "name": "Dr. Nandini Rao",
+        "specialty": "Neurology",
+        "experience": "15 years",
+        "qualification": "DM Neurology",
+        "availability": "Tue, Thu, Sat: 10AM-4PM",
+        "languages": ["English", "Telugu"]
+      }
+    ]
+  },
+  {
+    "id": "aig-gachibowli",
+    "name": "AIG Hospitals",
+    "location": "Gachibowli",
+    "specialties": ["Gastroenterology", "Hepatology", "Bariatric Surgery"],
+    "contact": "040 2424 2424",
+    "icuAvailable": true,
+    "doctors": [
+      {
+        "name": "Dr. Ajit Kumar",
+        "specialty": "Gastroenterology",
+        "experience": "17 years",
+        "qualification": "DM Gastroenterology",
+        "availability": "Mon-Sat: 9AM-2PM",
+        "languages": ["English", "Hindi", "Telugu"]
+      },
+      {
+        "name": "Dr. Priyanka Sharma",
+        "specialty": "Bariatric Surgery",
+        "experience": "12 years",
+        "qualification": "MCh Bariatric Surgery",
+        "availability": "Mon, Wed, Fri: 10AM-4PM",
+        "languages": ["English", "Hindi"]
+      }
+    ]
+  },
+  {
+    "id": "slg-lakdikapul",
+    "name": "SLG Hospitals",
+    "location": "Lakdi-ka-pul",
+    "specialties": ["General Medicine", "Pediatrics", "Dermatology"],
+    "contact": "040 2323 2323",
+    "icuAvailable": false,
+    "doctors": [
+      {
+        "name": "Dr. Sanjay Verma",
+        "specialty": "General Medicine",
+        "experience": "15 years",
+        "qualification": "MD General Medicine",
+        "availability": "Mon-Fri: 9AM-4PM",
+        "languages": ["English", "Hindi"]
+      },
+      {
+        "name": "Dr. Ananya Reddy",
+        "specialty": "Dermatology",
+        "experience": "10 years",
+        "qualification": "MD Dermatology",
+        "availability": "Tue, Thu, Sat: 10AM-3PM",
+        "languages": ["English", "Telugu"]
+      }
+    ]
+  },
+  {
+    "id": "maxcure-madhapur",
+    "name": "MaxCure Hospitals",
+    "location": "Madhapur",
+    "specialties": ["Cardiology", "Neurology", "Orthopedics"],
+    "contact": "040 4949 4949",
+    "icuAvailable": true,
+    "doctors": [
+      {
+        "name": "Dr. Vikram Aditya",
+        "specialty": "Cardiology",
+        "experience": "16 years",
+        "qualification": "DM Cardiology",
+        "availability": "Mon-Sat: 9AM-2PM",
+        "languages": ["English", "Hindi", "Telugu"]
+      },
+      {
+        "name": "Dr. Sneha Kapoor",
+        "specialty": "Neurology",
+        "experience": "11 years",
+        "qualification": "DM Neurology",
+        "availability": "Mon, Wed, Fri: 10AM-4PM",
+        "languages": ["English", "Hindi"]
+      }
+    ]
+  },
+  {
+    "id": "prakriya-gachibowli",
+    "name": "Prakriya Hospitals",
+    "location": "Gachibowli",
+    "specialties": ["General Medicine", "Pediatrics", "Gynecology"],
+    "contact": "040 7123 4567",
+    "icuAvailable": false,
+    "doctors": [
+      {
+        "name": "Dr. Ritu Sharma",
+        "specialty": "Gynecology",
+        "experience": "14 years",
+        "qualification": "MD Gynecology",
+        "availability": "Mon-Sat: 10AM-3PM",
+        "languages": ["English", "Hindi"]
+      },
+      {
+        "name": "Dr. Arun Malhotra",
+        "specialty": "Pediatrics",
+        "experience": "12 years",
+        "qualification": "MD Pediatrics",
+        "availability": "Mon-Fri: 9AM-4PM",
+        "languages": ["English", "Hindi", "Telugu"]
+      }
+    ]
+  },
+  {
+    "id": "metro-heart",
+    "name": "Metro Heart Institute",
+    "location": "Banjara Hills",
+    "specialties": ["Cardiology", "Cardiac Surgery", "Vascular Surgery"],
+    "contact": "040 2345 6789",
+    "icuAvailable": true,
+    "doctors": [
+      {
+        "name": "Dr. Nikhil Verma",
+        "specialty": "Cardiac Surgery",
+        "experience": "18 years",
+        "qualification": "MCh Cardiac Surgery",
+        "availability": "Mon-Fri: 8AM-3PM",
+        "languages": ["English", "Hindi"]
+      },
+      {
+        "name": "Dr. Shalini Kapoor",
+        "specialty": "Vascular Surgery",
+        "experience": "13 years",
+        "qualification": "MCh Vascular Surgery",
+        "availability": "Tue, Thu, Sat: 9AM-4PM",
+        "languages": ["English", "Hindi", "Punjabi"]
+      }
+    ]
+  },
+  {
+    "id": "aditya-birla",
+    "name": "Aditya Birla Memorial Hospital",
+    "location": "Gachibowli",
+    "specialties": ["Oncology", "Radiotherapy", "Palliative Care"],
+    "contact": "040 9876 5432",
+    "icuAvailable": true,
+    "doctors": [
+      {
+        "name": "Dr. Sameer Joshi",
+        "specialty": "Oncology",
+        "experience": "16 years",
+        "qualification": "DM Oncology",
+        "availability": "Mon-Sat: 9AM-2PM",
+        "languages": ["English", "Hindi", "Marathi"]
+      },
+      {
+        "name": "Dr. Anjali Reddy",
+        "specialty": "Radiotherapy",
+        "experience": "12 years",
+        "qualification": "MD Radiotherapy",
+        "availability": "Mon, Wed, Fri: 10AM-4PM",
+        "languages": ["English", "Telugu"]
+      }
+    ]
+  },
+  {
+    "id": "sri-sai",
+    "name": "Sri Sai MultiSpecialty Hospital",
+    "location": "HITEC City",
+    "specialties": ["General Surgery", "Internal Medicine", "ENT"],
+    "contact": "040 8765 4321",
+    "icuAvailable": false,
+    "doctors": [
+      {
+        "name": "Dr. Rajiv Malhotra",
+        "specialty": "General Surgery",
+        "experience": "15 years",
+        "qualification": "MS General Surgery",
+        "availability": "Mon-Fri: 9AM-4PM",
+        "languages": ["English", "Hindi"]
+      },
+      {
+        "name": "Dr. Priya Nair",
+        "specialty": "ENT",
+        "experience": "11 years",
+        "qualification": "MS ENT",
+        "availability": "Tue, Thu, Sat: 10AM-3PM",
+        "languages": ["English", "Hindi", "Malayalam"]
+      }
+    ]
+  },
+  {
+    "id": "life-line",
+    "name": "Life Line SuperSpecialty Hospital",
+    "location": "Madhapur",
+    "specialties": ["Emergency Medicine", "Trauma Care", "Critical Care"],
+    "contact": "040 7654 3210",
+    "icuAvailable": true,
+    "doctors": [
+      {
+        "name": "Dr. Arjun Kapoor",
+        "specialty": "Emergency Medicine",
+        "experience": "14 years",
+        "qualification": "MD Emergency Medicine",
+        "availability": "24/7 On Call",
+        "languages": ["English", "Hindi"]
+      },
+      {
+        "name": "Dr. Neeta Singh",
+        "specialty": "Critical Care",
+        "experience": "12 years",
+        "qualification": "DM Critical Care",
+        "availability": "24/7 On Call",
+        "languages": ["English", "Hindi", "Telugu"]
+      }
+    ]
+  },
+  {
+    "id": "city-center",
+    "name": "City Center Hospital",
+    "location": "Secunderabad",
+    "specialties": ["Family Medicine", "Pediatrics", "Geriatrics"],
+    "contact": "040 6543 2109",
+    "icuAvailable": false,
+    "doctors": [
+      {
+        "name": "Dr. Amit Sharma",
+        "specialty": "Family Medicine",
+        "experience": "15 years",
+        "qualification": "MD Family Medicine",
+        "availability": "Mon-Sat: 9AM-4PM",
+        "languages": ["English", "Hindi"]
+      },
+      {
+        "name": "Dr. Sunita Reddy",
+        "specialty": "Geriatrics",
+        "experience": "13 years",
+        "qualification": "MD Geriatrics",
+        "availability": "Mon, Wed, Fri: 10AM-3PM",
+        "languages": ["English", "Telugu"]
+      }
+    ]
+  }
+]

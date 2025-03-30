@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
     }
   
-    fetch('hospital.json')
+    fetch('./hospital.json')
         .then(response => response.json())
         .then(hospitals => {
             const hospital = hospitals.find(h => h.id === hospitalId);
@@ -65,9 +65,8 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             
             <div class="book-appointment-container">
-                <button onclick="window.location.href='tel:${hospital.contact.replace(/\s/g, '')}'" 
-                        class="book-appointment-btn">
-                    Book Appointment
+                <button onclick="window.location.href='appointmentbooking.html?hospital=${encodeURIComponent(hospital.name)}&contact=${encodeURIComponent(hospital.contact)}'" 
+            class="book-appointment-btn">Book Appointment
                 </button>
             </div>
         `;

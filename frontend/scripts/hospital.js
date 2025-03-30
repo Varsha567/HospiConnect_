@@ -28,7 +28,7 @@ function showError(message) {
 async function fetchHospitals() {
   showLoading();
   try {
-    const response = await fetch('hospital.json');
+    const response = await fetch('./scripts/hospital.json');
     if (!response.ok) throw new Error('Failed to load hospital data');
     hospitals = await response.json();
     displayHospitals(hospitals);
