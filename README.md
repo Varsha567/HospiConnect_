@@ -86,16 +86,14 @@ HospiConnect/
 
 ### 🧩 Installation
 
-```bash
+
 git clone https://github.com/Varsha567/HospiConnect_.git
 cd HospiConnect_
 npm install
-🛠️ Configuration
-Create a .env file in the root folder with:
 
-ini
-Copy
-Edit
+### 🛠️ Configuration ###
+
+Create a .env file in the root folder with
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 ▶️ Run the App
